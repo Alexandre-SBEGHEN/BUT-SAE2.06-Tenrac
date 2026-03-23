@@ -1,20 +1,20 @@
 -- ////////////////////////////////////////////////////////////////////
-/*                                                                                                                                                                                               
-                                         .--,-``-.     
-                 ,---,        ,---,     /   /     '.   
-       ,---.  ,`--.' |     ,`--.' |    / ../        ;  
-      /__./| /    /  :    /    /  :    \ ``\  .`-    ' 
- ,---.;  ; |:    |.' '   :    |.' '     \___\/   \   : 
-/___/ \  | |`----':  |   `----':  |          \   :   | 
-\   ;  \ ' |   '   ' ;      '   ' ;          /  /   /  
- \   \  \: |   |   | |      |   | |          \  \   \  
-  ;   \  ' .   '   : ;      '   : ;      ___ /   :   | 
-   \   \   '   |   | '      |   | '     /   /\   /   : 
-    \   `  ;   '   : | ___  '   : | ___/ ,,/  ',-    . 
-     :   \ |   ;   |.'/  .\ ;   |.'/  .\ ''\        ;  
-      '---"    '---'  \  ; |'---'  \  ; \   \     .'   
-                       `--"         `--" `--`-,,-'     
-                                                                                                                 
+/*                                                                                                                                                                                                                                               
+                                           ,--, 
+                 ,---,        ,---,      ,--.'| 
+       ,---.  ,`--.' |     ,`--.' |   ,--,  | : 
+      /__./| /    /  :    /    /  :,---.'|  : ' 
+ ,---.;  ; |:    |.' '   :    |.' ';   : |  | ; 
+/___/ \  | |`----':  |   `----':  ||   | : _' | 
+\   ;  \ ' |   '   ' ;      '   ' ;:   : |.'  | 
+ \   \  \: |   |   | |      |   | ||   ' '  ; : 
+  ;   \  ' .   '   : ;      '   : ;\   \  .'. | 
+   \   \   '   |   | '      |   | ' `---`:  | ' 
+    \   `  ;   '   : | ___  '   : | ___  '  ; | 
+     :   \ |   ;   |.'/  .\ ;   |.'/  .\ |  : ; 
+      '---"    '---'  \  ; |'---'  \  ; |'  ,/  
+                       `--"         `--" '--'   
+                                                                                                                                                                 
 */
 -- ////////////////////////////////////////////////////////////////////
 
@@ -84,6 +84,22 @@ DROP TABLE IF EXISTS Repas CASCADE CONSTRAINT PURGE;
 -- //** ENTITEE ASSOS **//
 
 DROP TABLE IF EXISTS Tenrac_Se_Reunissent CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Tenrac_Est_Allergique CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Tenrac_A_Pour_Conviction CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Tenrac_Croit CASCADE CONSTRAINT PURGE;
+------------------------------------------------------------------------
+DROP TABLE IF EXISTS Legume_Peut_Enfreindre CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Legume_Peut_Heurter CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Legume_Peut_Provoquer CASCADE CONSTRAINT PURGE;
+------------------------------------------------------------------------
+DROP TABLE IF EXISTS Repas_Constitue_De CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Repas_Servi_Avec CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Plat_Est_Accompagne_De CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Compo_Est_Assemblage_De CASCADE CONSTRAINT PURGE;
+------------------------------------------------------------------------
+DROP TABLE IF EXISTS Machine_Prepare CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Modele_Necessite CASCADE CONSTRAINT PURGE;
+DROP TABLE IF EXISTS Registre_Archive CASCADE CONSTRAINT PURGE;
 
 -- //******************//
 
@@ -243,14 +259,13 @@ CREATE TABLE Registre {
 -- PLAT AVEC NOURRITURE ET CI
 
 CREATE TABLE Plat {
-    INHERITS(Composition);
     plat_id NUMBER(5, 0),
     plat_nom VARCHAR2(64) NOT NULL,
     PRIMARY KEY(plat_id),
     FOREIGN KEY(legume_id) REFERENCES Legume(legume_id),
     FOREIGN KEY(raclette_id) REFERENCES Raclette(raclette_id),
     FOREIGN KEY(composition_id) REFERENCES Composition(composition_id)
-}
+} INHERITS(Composition);
 
 CREATE TABLE Raclette {
     raclette_id NUMBER(3, 0),
@@ -271,12 +286,11 @@ CREATE TABLE Boisson {
 }
 
 CREATE TABLE Sauce {
-    INHERITS(Composition);
     sauce_id NUMBER(5, 0),
     sauce_nom VARCHAR2(64) NOT NULL,
     PRIMARY KEY(sauce_id),
     FOREIGN KEY(composition_id) REFERENCES Composition(composition_id)
-}
+} INHERITS(Composition);
 
 CREATE TABLE Composition {
     composition_id NUMBER(10, 0),
@@ -296,9 +310,6 @@ CREATE TABLE Legume {
 }
 
 CREATE TABLE Degustation {
-    INHERITS(Reunion);
-    INHERITS(Tenrac);
-    INHERITS(Repas);
     repas_id NUMBER(10, 0),
     tenrac_id NUMBER(10, 0),
     reunion_id NUMBER(20, 0),
@@ -306,7 +317,7 @@ CREATE TABLE Degustation {
     FOREIGN KEY(repas_id) REFERENCES Repas(repas_id),
     FOREIGN KEY(tenrac_id) REFERENCES Tenrac(tenrac_id),
     FOREIGN KEY(reunion_id) REFERENCES Reunion(reunion_id)
-} 
+} INHERITS(Reunion, Tenrac, Repas);
 
 -- ==================================================================
 
@@ -374,8 +385,6 @@ CREATE TABLE Machine {
 
 -- TENRAC
 
--- ==================================================================
-
 CREATE TABLE Tenrac_Se_Reunissent {
     tenrac_id NUMBER(10, 0),
     reunion_id NUMBER(20, 0),
@@ -383,3 +392,130 @@ CREATE TABLE Tenrac_Se_Reunissent {
     FOREIGN KEY(tenrac_id) REFERENCES Teranc(tenrac_id),
     FOREIGN KEY(reunion_id) REFERENCES Reunion(reunion_id)
 }
+
+CREATE TABLE Tenrac_Est_Allergique {
+    tenrac_id NUMBER(10, 0),
+    allergie_id NUMBER(10, 0),
+    PRIMARY KEY(tenrac_id, allergie_id),
+    FOREIGN KEY(tenrac_id) REFERENCES Tenrac(tenrac_id),
+    FOREIGN KEY(allergie_id) REFERENCES Allergie(allergie_id)
+}
+
+CREATE TABLE Tenrac_Croit {
+    tenrac_id NUMBER(10, 0),
+    croyance_id NUMBER(10, 0),
+    PRIMARY KEY(tenrac_id, croyance_id),
+    FOREIGN KEY(tenrac_id) REFERENCES Tenrac(tenrac_id),
+    FOREIGN KEY(croyance_id) REFERENCES Croyance(croyance_id)
+}
+
+CREATE TABLE Tenrac_A_Pour_Conviction {
+    tenrac_id NUMBER(10, 0),
+    conviction_id NUMBER(10, 0),
+    PRIMARY KEY(tenrac_id, conviction_id),
+    FOREIGN KEY(tenrac_id) REFERENCES Tenrac(tenrac_id),
+    FOREIGN KEY(conviction_id) REFERENCES Conviction(conviction_id)
+}
+
+-- ==================================================================
+
+
+-- ==================================================================
+
+-- SENSIBILITEE
+
+CREATE TABLE Legume_Peut_Provoquer {
+    legume_id NUMBER(5, 0),
+    allergie_id NUMBER(10, 0),
+    PRIMARY KEY(legume_id, allergie_id),
+    FOREIGN KEY(legume_id) REFERENCES Legume(legume_id),
+    FOREIGN KEY(allergie_id) REFERENCES Allergie(allergie_id)
+}
+
+CREATE TABLE Legume_Peut_Heurter {
+    legume_id NUMBER(5, 0),
+    croyance_id NUMBER(10, 0),
+    PRIMARY KEY(legume_id, croyance_id),
+    FOREIGN KEY(legume_id) REFERENCES Legume(legume_id),
+    FOREIGN KEY(croyance_id) REFERENCES Croyance(croyance_id)
+}
+
+CREATE TABLE Legume_Peut_Enfreindre {
+    legume_id NUMBER(5, 0),
+    conviction_id NUMBER(10, 0),
+    PRIMARY KEY(legume_id, conviction_id),
+    FOREIGN KEY(legume_id) REFERENCES Legume(legume_id),
+    FOREIGN KEY(conviction_id) REFERENCES Conviction(conviction_id)
+}
+
+-- ==================================================================
+
+-- ==================================================================
+
+-- NOURRITURE
+
+CREATE TABLE Repas_Constitue_De {
+    repas_id NUMBER(10, 0),
+    plat_id NUMBER(5, 0),
+    PRIMARY KEY(repas_id, plat_id),
+    FOREIGN KEY(repas_id) REFERENCES Repas(repas_id),
+    FOREIGN KEY(plat_id) REFERENCES Plat(plat_id)
+}
+
+CREATE TABLE Plat_Est_Accompagne_De(
+   plat_id NUMBER(5, 0),
+   sauce_id NUMBER(5, 0),
+   PRIMARY KEY(plat_id, sauce_id),
+   FOREIGN KEY(plat_id) REFERENCES Plat(plat_id),
+   FOREIGN KEY(sauce_id) REFERENCES Sauce(sauce_id)
+);
+
+CREATE TABLE Compo_Est_Assemblage_De(
+   ingredient_id NUMBER(5, 0),
+   composition_id NUMBER(10, 0),
+   PRIMARY KEY(ingredient_id, composition_id),
+   FOREIGN KEY(ingredient_id) REFERENCES Ingredient(ingredient_id),
+   FOREIGN KEY(composition_id) REFERENCES Composition(composition_id)
+);
+
+CREATE TABLE Repas_Servi_Avec(
+   repas_id NUMBER(10, 0),
+   boisson_id NUMBER(5, 0),
+   PRIMARY KEY(repas_id, boisson_id),
+   FOREIGN KEY(repas_id) REFERENCES Repas(repas_id),
+   FOREIGN KEY(boisson_id) REFERENCES Boisson(boisson_id)
+);
+
+-- ==================================================================
+
+-- ==================================================================
+
+-- MACHINES
+
+CREATE TABLE Registre_Archive(
+   registre_id NUMBER(5, 0),
+   certificat_id NUMBER(10, 0),
+   PRIMARY KEY(registre_id, certificat_id),
+   FOREIGN KEY(registre_id) REFERENCES Registre(registre_id),
+   FOREIGN KEY(certificat_id) REFERENCES Certificat_Entretient(certificat_id)
+);
+
+CREATE TABLE Machine_Prepare(
+   repas_id NUMBER(10, 0),
+   machine_id NUMBER(5, 0),
+   PRIMARY KEY(repas_id, machine_id),
+   FOREIGN KEY(repas_id) REFERENCES Repas(repas_id),
+   FOREIGN KEY(machine_id) REFERENCES Machine(machine_id)
+);
+
+CREATE TABLE Modele_Necessite(
+   modele_id NUMBER(5, 0),
+   entretient_id NUMBER(10, 0),
+   PRIMARY KEY(modele_id, entretient_id),
+   FOREIGN KEY(modele_id) REFERENCES Machine_Modele(modele_id),
+   FOREIGN KEY(entretient_id) REFERENCES Entretient(entretient_id)
+);
+
+
+
+-- ==================================================================
