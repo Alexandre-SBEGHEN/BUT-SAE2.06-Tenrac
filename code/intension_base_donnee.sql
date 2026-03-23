@@ -1,21 +1,20 @@
 -- ////////////////////////////////////////////////////////////////////
-/*                                                                                                                                                                                                                                               
-                                                     
-                                                     
-                 ,---,            ,----,       ,---, 
-       ,---.  ,`--.' |          .'   .' \   ,`--.' | 
-      /__./| /    /  :        ,----,'    | /    /  : 
- ,---.;  ; |:    |.' '        |    :  .  ;:    |.' ' 
-/___/ \  | |`----':  |        ;    |.'  / `----':  | 
-\   ;  \ ' |   '   ' ;        `----'/  ;     '   ' ; 
- \   \  \: |   |   | |          /  ;  /      |   | | 
-  ;   \  ' .   '   : ;         ;  /  /-,     '   : ; 
-   \   \   '   |   | '        /  /  /.`|     |   | ' 
-    \   `  ;   '   : | ___  ./__;      :___  '   : | 
-     :   \ |   ;   |.'/  .\ |   :    .'/  .\ ;   |.' 
-      '---"    '---'  \  ; |;   | .'   \  ; |'---'   
-                       `--" `---'       `--"         
-                                                                                                                                                                                                                                                                          
+/*                                                                                                                                                                                                                                                                                                        
+                                                            
+                 ,---,            ,----,           ,----,   
+       ,---.  ,`--.' |          .'   .' \        .'   .' \  
+      /__./| /    /  :        ,----,'    |     ,----,'    | 
+ ,---.;  ; |:    |.' '        |    :  .  ;     |    :  .  ; 
+/___/ \  | |`----':  |        ;    |.'  /      ;    |.'  /  
+\   ;  \ ' |   '   ' ;        `----'/  ;       `----'/  ;   
+ \   \  \: |   |   | |          /  ;  /          /  ;  /    
+  ;   \  ' .   '   : ;         ;  /  /-,        ;  /  /-,   
+   \   \   '   |   | '        /  /  /.`|       /  /  /.`|   
+    \   `  ;   '   : | ___  ./__;      :___  ./__;      :   
+     :   \ |   ;   |.'/  .\ |   :    .'/  .\ |   :    .'    
+      '---"    '---'  \  ; |;   | .'   \  ; |;   | .'       
+                       `--" `---'       `--" `---'          
+                                                                                                                                                                                                                                                                                                                               
 */
 -- ////////////////////////////////////////////////////////////////////
 
@@ -32,6 +31,7 @@
 PK ==> PRIMARY KEY
 FK ==> FOREIGN KEY
 DM ==> DOMAIN
+TGR ==> TRIGGER
 
 -----------------------
 
@@ -47,15 +47,21 @@ PROMPT "Création de l'intension de la base de données des Tenracs";
 PROMPT "Définition des données";
 
 /*
-CREATE TRIGGER VERIF_Certificat_Entretien_Dignite
-BEFORE INSERT ON Certificat_Entretien
+CREATE OR REPLACE TRIGGER VERIF_Certificat_Entretien_Dignite
+BEFORE INSERT ON Certificat
 FOR EACH ROW
+DECLARE
+    v_dignite NUMBER(3,0);
 BEGIN
-    IF (SELECT dignite_id FROM Tenrac WHERE tenrac_id = NEW.tenrac_id) IS NULL THEN
-        SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'ERREUR : L''entretien de la machine doit etre effectue par un Tenrac de dinite idoine ! (au moins Maitre)';
+    SELECT dignite_id INTO v_dignite
+    FROM Tenrac
+    WHERE tenrac_id = :NEW.tenrac_id;
+    
+    IF v_dignite IS NULL THEN
+        RAISE_APPLICATION_ERROR(-20001, 'ERREUR : L''entretien doit etre effectue par un Tenrac de dignite idoine !');
     END IF;
 END;
+/
 */
 
 -- *****************************************************************
@@ -690,3 +696,48 @@ CREATE TABLE Degustation (
 );
 
 PROMPT "Fin de création de l'intension de la base de donnée";
+
+-- *********************************************************************************
+
+-- CREATION DES TRIGGERS
+
+-- *********************************************************************************
+
+--Afin d'etre accepte pour une utilisation officielle, une machine doit presenter son certificat d'entretien effectue par un tenrac ayant obtenu la dignite idoine (au moins Maitre)
+CREATE OR REPLACE TRIGGER VERIF_Certificat_Entretien_Dignite
+BEFORE INSERT ON Certificat
+FOR EACH ROW
+DECLARE
+    v_dignite NUMBER(3,0);
+BEGIN
+    SELECT dignite_id INTO v_dignite
+    FROM Tenrac
+    WHERE tenrac_id = :NEW.tenrac_id;
+    
+    IF v_dignite IS NULL THEN
+        RAISE_APPLICATION_ERROR(-20001, 'ERREUR : L''entretien doit etre effectue par un Tenrac de dignite idoine !');
+    END IF;
+END;
+/
+
+--
+CREATE OR REPLACE TRIGGER TGR_Verif_Presence_Chevalier_Ou_Dame
+AFTER INSERT ON Tenrac_Se_Reunissent
+DECLARE
+    v_count NUMBER;
+BEGIN
+    -- Verification de la présence d'une dame ou chevalier
+    SELECT COUNT(*)
+    INTO v_count
+    FROM Tenrac_Se_Reunissent tsr
+    INNER JOIN Tenrac t ON tsr.tenrac_id = t.tenrac_id
+    INNER JOIN Tenrac_Grade tg ON t.grade_id = tg.grade_id
+    WHERE tg.grade_nom IN ('CHEVALIER', 'DAME');
+
+    IF v_count = 0 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Erreur de l''Ordre : Une réunion ne peut avoir lieu sans un Chevalier ou une Dame !');
+    END IF;
+END;
+/
+
+PROMPT "Trigger activé";
