@@ -36,7 +36,9 @@ DM ==> DOMAIN
 -----------------------
 
 */
-
+-- EVITER ERREUR D'ESPACE
+SET SQLBLANKLINES ON;
+--
 
 PROMPT "Création de l'intension de la base de données des Tenracs";
 
