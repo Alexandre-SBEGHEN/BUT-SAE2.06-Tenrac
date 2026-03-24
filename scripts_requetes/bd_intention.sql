@@ -739,5 +739,3 @@ BEGIN
     END IF;
 END;
 /
-
-PROMPT "Trigger activé";
