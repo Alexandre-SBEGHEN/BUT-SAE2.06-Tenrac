@@ -207,7 +207,7 @@ INSERT INTO Machine (machine_id, machine_nom, modele_id) VALUES (7, "WISHCLETTE"
 
 INSERT INTO Entretien (entretien_id, entretien_type, entretien_periodicite) VALUES (1, "TERROIR" ,1);
 
-INSERT INTO () VALUES ();
+INSERT INTO (certificat_id , entretien_date, tenrac_id) VALUES ();
 ----------------------------------------------------------------------
 
 PROMPT "Fin de création de l'extension de la base de donnees";
