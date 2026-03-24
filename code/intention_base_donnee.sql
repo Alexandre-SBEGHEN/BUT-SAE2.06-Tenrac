@@ -695,7 +695,7 @@ CREATE TABLE Degustation (
     --------------------------------------------------------------
 );
 
-PROMPT "Fin de création de l'intension de la base de donnée";
+PROMPT "Fin de création de l'intention de la base de donnée";
 
 -- *********************************************************************************
 
