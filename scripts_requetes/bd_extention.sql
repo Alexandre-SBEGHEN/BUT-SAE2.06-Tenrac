@@ -62,52 +62,52 @@ INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenra
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (16, 'LAMBERT', 'JULIEN', 'JUJUDU21@CLUB-INTERNET.FR', '0762842057', '12 RUE DE LA LIBERTE', 'RESIDENCE LA MOUTARDE', '21000', 'DIJON', '47824861065134', 1, NULL, NULL, 2, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (17, 'FRANCOIS', 'MAXIME', 'MAXIME.FRANCOIS49@GMAIL.COM', '0606060606', '8 AVENUE JEAN JAURES', 'LA MAISON DU PAPE', '49000', 'ANGERS', '94514775215649', 4, 1, 2, 2, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (18, 'KEVIN', 'JEAN', 'JEANKEVIN@GMAIL.COM', '0707070707', '1 RUE DE L''ANONYMITE', NULL, '00000', 'VILLE', '70117132427816', 2, 1, NULL, NULL, 3);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (19, 'BEN-KHELIL', 'INES', 'INES.BEN-KHELIL@ETU.UNIV-AMU.FR', '45 RUE DU QUADRICEPS', NULL, '13500', 'MARTIGUES', '77784108501264', 7, 2, 3, 3, 1);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (19, 'BEN-KHELIL', 'INES', 'INES.BEN-KHELIL@ETU.UNIV-AMU.FR', '0739571269', '45 RUE DU QUADRICEPS', NULL, '13500', 'MARTIGUES', '77784108501264', 7, 2, 3, 3, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (20, 'PEYRON', 'MAELAN', 'MAELAN.PEYRON@ETU.UNIV-AMU.FR', '0767676767', '76 BOULEVARD DU SIX SEVEN', '', '67000', 'STRASBOURG', '94514775215649', 1, NULL, NULL, NULL, 4);
+
 --Carte membre
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('48291736', 1, TO_DATE('2024-03-17', 'YYYY-MM-DD'), NULL, 1);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('10583927', 1, TO_DATE('2027-11-05', 'YYYY-MM-DD'), NULL, 2);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('76429015', 0, TO_DATE('2025-06-22', 'YYYY-MM-DD'), NULL, 3);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('93816204', 1, TO_DATE('2028-01-14', 'YYYY-MM-DD'), NULL, 4);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('21745098', 1, TO_DATE('2026-09-30', 'YYYY-MM-DD'), NULL, 5);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('65039481', 0, TO_DATE('2024-12-08', 'YYYY-MM-DD'), NULL, 6);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('30957264', 1, TO_DATE('2027-04-19', 'YYYY-MM-DD'), NULL, 7);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('87120439', 1, TO_DATE('2025-10-11', 'YYYY-MM-DD'), NULL, 8);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('54698172', 0, TO_DATE('2026-02-03', 'YYYY-MM-DD'), NULL, 9);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('19283746', 1, TO_DATE('2028-07-27', 'YYYY-MM-DD'), NULL, 10);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('68392015', 0, TO_DATE('2024-05-29', 'YYYY-MM-DD'), NULL, 11);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('40715298', 1, TO_DATE('2027-08-16', 'YYYY-MM-DD'), NULL, 12);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('25984371', 0, TO_DATE('2025-01-07', 'YYYY-MM-DD'), NULL, 13);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('73401652', 1, TO_DATE('2026-11-21', 'YYYY-MM-DD'), NULL, 14);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('91827530', 1, TO_DATE('2028-03-09', 'YYYY-MM-DD'), NULL, 15);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('36259084', 0, TO_DATE('2024-09-14', 'YYYY-MM-DD'), NULL, 16);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('84570913', 1, TO_DATE('2027-02-28', 'YYYY-MM-DD'), NULL, 17);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('12068457', 0, TO_DATE('2024-12-19', 'YYYY-MM-DD'), NULL, 18);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('59723108', 1, TO_DATE('2026-06-05', 'YYYY-MM-DD'), NULL, 19);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('76049821', 1, TO_DATE('2028-10-31', 'YYYY-MM-DD'), NULL, 20);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (1, '48291736', 1, TO_DATE('2024-03-17', 'YYYY-MM-DD'), NULL, 1);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (2, '10583927', 1, TO_DATE('2027-11-05', 'YYYY-MM-DD'), NULL, 2);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (3, '76429015', 0, TO_DATE('2025-06-22', 'YYYY-MM-DD'), NULL, 3);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (4, '93816204', 1, TO_DATE('2028-01-14', 'YYYY-MM-DD'), NULL, 4);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (5, '21745098', 1, TO_DATE('2026-09-30', 'YYYY-MM-DD'), NULL, 5);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (6, '65039481', 0, TO_DATE('2024-12-08', 'YYYY-MM-DD'), NULL, 6);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (7, '30957264', 1, TO_DATE('2027-04-19', 'YYYY-MM-DD'), NULL, 7);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (8, '87120439', 1, TO_DATE('2025-10-11', 'YYYY-MM-DD'), NULL, 8);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (9, '54698172', 0, TO_DATE('2026-02-03', 'YYYY-MM-DD'), NULL, 9);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (10, '19283746', 1, TO_DATE('2028-07-27', 'YYYY-MM-DD'), NULL, 10);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (11, '68392015', 0, TO_DATE('2024-05-29', 'YYYY-MM-DD'), NULL, 11);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (12, '40715298', 1, TO_DATE('2027-08-16', 'YYYY-MM-DD'), NULL, 12);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (13, '25984371', 0, TO_DATE('2025-01-07', 'YYYY-MM-DD'), NULL, 13);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (14, '73401652', 1, TO_DATE('2026-11-21', 'YYYY-MM-DD'), NULL, 14);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (15, '91827530', 1, TO_DATE('2028-03-09', 'YYYY-MM-DD'), NULL, 15);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (16, '36259084', 0, TO_DATE('2024-09-14', 'YYYY-MM-DD'), NULL, 16);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (17, '84570913', 1, TO_DATE('2027-02-28', 'YYYY-MM-DD'), NULL, 17);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (18, '12068457', 0, TO_DATE('2024-12-19', 'YYYY-MM-DD'), NULL, 18);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (19, '59723108', 1, TO_DATE('2026-06-05', 'YYYY-MM-DD'), NULL, 19);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (20, '76049821', 1, TO_DATE('2028-10-31', 'YYYY-MM-DD'), NULL, 20);
 --Nouvelles cartes membres (pour celles qui ont expiré)
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('76429015', 1, TO_DATE('2027-02-11', 'YYYY-MM-DD'), NULL, 3);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('65039481', 1, TO_DATE('2027-09-23', 'YYYY-MM-DD'), NULL, 6);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('54698172', 1, TO_DATE('2028-04-06', 'YYYY-MM-DD'), NULL, 9);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('68392015', 1, TO_DATE('2028-12-01', 'YYYY-MM-DD'), NULL, 11);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('25984371', 1, TO_DATE('2026-07-15', 'YYYY-MM-DD'), NULL, 13);
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('43167950', 1, TO_DATE('2027-11-28', 'YYYY-MM-DD'), NULL, 16); --A change son code perso
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('70825391', 0, TO_DATE('2026-03-12', 'YYYY-MM-DD'), NULL, 18); --A change son code perso
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (21, '76429015', 1, TO_DATE('2027-02-11', 'YYYY-MM-DD'), NULL, 3);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (22, '65039481', 1, TO_DATE('2027-09-23', 'YYYY-MM-DD'), NULL, 6);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (23, '54698172', 1, TO_DATE('2028-04-06', 'YYYY-MM-DD'), NULL, 9);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (24, '68392015', 1, TO_DATE('2028-12-01', 'YYYY-MM-DD'), NULL, 11);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (25, '25984371', 1, TO_DATE('2026-07-15', 'YYYY-MM-DD'), NULL, 13);
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (26, '43167950', 1, TO_DATE('2027-11-28', 'YYYY-MM-DD'), NULL, 16); --A change son code perso
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (27, '70825391', 0, TO_DATE('2026-03-12', 'YYYY-MM-DD'), NULL, 18); --A change son code perso
 --3e carte de Tenrac 18
-INSERT INTO Carte_Membre (carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES ('12068457', 1, TO_DATE('2026-03-12', 'YYYY-MM-DD'), NULL, 18); --A remis son code d'origine
+INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (28, '12068457', 1, TO_DATE('2026-03-12', 'YYYY-MM-DD'), NULL, 18); --A remis son code d'origine
 ----------------------------------------------------------------------
 
 
 
 -- Clubs et Ordre --
+INSERT INTO Ordre (ordre_id, ordre_nom, registre_id) VALUES (1, 'ORDRE CENTRAL DES TENRACS', 1);
 INSERT INTO Club (club_id, club_nom, ordre_id, registre_id) VALUES (1, 'SUPER RACLETTE', 1, 2);
 INSERT INTO Club (club_id, club_nom, ordre_id, registre_id) VALUES (2, 'TENDERS DORES', 1, 3);
 INSERT INTO Club (club_id, club_nom, ordre_id, registre_id) VALUES (3, 'POULETT FONDANT', 1, 4);
 INSERT INTO Club (club_id, club_nom, ordre_id, registre_id) VALUES (4, 'POULET CROUSTY', 1, 5);
 INSERT INTO Club (club_id, club_nom, ordre_id, registre_id) VALUES (5, 'CROQUANT FONDANT', 1, 6);
 INSERT INTO Club (club_id, club_nom, ordre_id, registre_id) VALUES (7, 'CLUB RACC', 1, 7);
-
-INSERT INTO Ordre (ordre_id, ordre_nom, registre_id) VALUES (1, 'ORDRE CENTRAL DES TENRACS', 1);
 
 INSERT INTO Registre (registre_id) VALUES (1);
 INSERT INTO Registre (registre_id) VALUES (2);
@@ -117,9 +117,9 @@ INSERT INTO Registre (registre_id) VALUES (5);
 INSERT INTO Registre (registre_id) VALUES (6);
 INSERT INTO Registre (registre_id) VALUES (7);
 
-INSERT INTO Organisme_Type (orgatype_id, type_nom) VALUES (1, 'ENTREPRISE');
-INSERT INTO Organisme_Type (orgatype_id, type_nom) VALUES (2, 'ASSOCIATION');
-INSERT INTO Organisme_Type (orgatype_id, type_nom) VALUES (3, 'EDUCATION');
+INSERT INTO Organisme_Type (orgatype_id, orgatype_nom) VALUES (1, 'ENTREPRISE');
+INSERT INTO Organisme_Type (orgatype_id, orgatype_nom) VALUES (2, 'ASSOCIATION');
+INSERT INTO Organisme_Type (orgatype_id, orgatype_nom) VALUES (3, 'EDUCATION');
 
 INSERT INTO Organisme (organisme_siret, organisme_raison, orgatype_id) VALUES ('49573343174126', 'RACLETTE & CO', 1);
 INSERT INTO Organisme (organisme_siret, organisme_raison, orgatype_id) VALUES ('18972948872548', 'TENDERS FORMATION FRANCE', 3);
@@ -149,8 +149,8 @@ INSERT INTO Adresse (adresse_id, adresse_principale, adresse_complement, adresse
 
 PROMPT "Creation de l extension de donnees pour la table 'Repas'";
 
-INSERT INTO Repas (repas_id, repas_nom) VALUES (1, 'RACLETTE & CIE');
-INSERT INTO Repas (repas_id, repas_nom) VALUES (2, 'PIZZA & CIE');
+INSERT INTO Repas (repas_id, repas_nom) VALUES (1, 'RACLETTE ET CIE');
+INSERT INTO Repas (repas_id, repas_nom) VALUES (2, 'PIZZA ET CIE');
 INSERT INTO Repas (repas_id, repas_nom) VALUES (3, 'VIANDARD');
 INSERT INTO Repas (repas_id, repas_nom) VALUES (4, 'AU FRUITS');
 INSERT INTO Repas (repas_id, repas_nom) VALUES (5, 'MER ET OCEAN');
@@ -218,8 +218,8 @@ INSERT INTO Ingredient (ingredient_id, ingredient_nom) VALUES (13, 'PROTEINES');
 -- =====================
 
 -- ==== COMPOSITION ====
-/*
-INSERT INTTO Composition (composition_id) VALUES (11);
+
+INSERT INTO Composition (composition_id) VALUES (1);
 INSERT INTO Composition (composition_id) VALUES (2);
 INSERT INTO Composition (composition_id) VALUES (3);
 INSERT INTO Composition (composition_id) VALUES (4);
@@ -249,13 +249,7 @@ INSERT INTO Composition (composition_id) VALUES (27);
 INSERT INTO Composition (composition_id) VALUES (28);
 INSERT INTO Composition (composition_id) VALUES (29);
 INSERT INTO Composition (composition_id) VALUES (30);
-*/
-BEGIN
-     FOR i IN 1..30 LOOP
-          INSERT INTO Composition (composition_id) VALUES (i);
-     END LOOP
-END;
-/
+
 
 -- =====================
 
@@ -560,12 +554,12 @@ INSERT INTO Legume_Peut_Heurter (legume_id, conviction_id) VALUES (8, 2);
 -- =====================
 --16)
 
-INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (1, lampe  à  raclette  traditionnelle);
-INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (2, combiné  raclette-pierrade-fondue-crêpière-friteuse-salamandre);
-INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (3, appareil à raclette bon marché);
-INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (4, lampe  à  raclette en T);
-INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (5, appareil à raclette rond);
-INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (6, appareil à raclette triple étage);
+INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (1, 'lampe  a  raclette  traditionnelle');
+INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (2, 'combine  raclette-pierrade-fondue-crepiere-friteuse-salamandre');
+INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (3, 'appareil a raclette bon marche');
+INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (4, 'lampe  a  raclette en T');
+INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (5, 'appareil a raclette rond');
+INSERT INTO Machine_Modele (modele_id, modele_nom) VALUES (6, 'appareil a raclette triple étage');
 
 INSERT INTO Machine (machine_id, machine_nom, modele_id) VALUES (1, 'TERROIR' ,1);
 INSERT INTO Machine (machine_id, machine_nom, modele_id) VALUES (2, 'CHIMERE' ,2);
@@ -599,6 +593,17 @@ INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (3, 8);
 INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (4, 9);
 INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (5, 10);
 
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(5, 1);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(3, 2);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(7, 3);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(6, 4);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(2, 5);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(4, 6);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(1, 7);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(5, 8);
+INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(7, 9);
+
+
 --18)
 
 INSERT INTO Entretien (entretien_id, entretien_type, entretien_periodicite) VALUES (1, 'BICARBIONATE DE SOUDE', 4);
@@ -622,18 +627,7 @@ INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (2, TO_TIMESTA
 INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (3, TO_TIMESTAMP('2026/11/27 19:32:08', 'YYYY/MM/DD HH24:MI:SS'), 3);
 INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (4, TO_TIMESTAMP('2027/01/14 10:05:39', 'YYYY/MM/DD HH24:MI:SS'), 4);
 INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (5, TO_TIMESTAMP('2027/03/22 22:41:16', 'YYYY/MM/DD HH24:MI:SS'), 5);
-/*
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (6, TO_TIMESTAMP('2027/05/09 06:27:50', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (7, TO_TIMESTAMP('2027/07/30 15:12:03', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (8, TO_TIMESTAMP('2027/09/11 08:56:47', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (9, TO_TIMESTAMP('2027/10/25 18:20:34', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (10, TO_TIMESTAMP('2027/12/02 11:49:59', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (11, TO_TIMESTAMP('2026/07/19 04:33:12', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (12, TO_TIMESTAMP('2026/10/08 23:14:26', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (13, TO_TIMESTAMP('2027/02/05 09:58:41', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (14, TO_TIMESTAMP('2027/06/17 17:36:28', 'YYYY/MM/DD HH24:MI:SS'));
-INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (15, TO_TIMESTAMP('2027/11/29 21:07:53', 'YYYY/MM/DD HH24:MI:SS'));
-*/
+INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (6, TO_TIMESTAMP('2027/10/23 19:45:00', 'YYYY/MM/DD HH24:MI:SS'), 6);
 --Se reunissent
 /*
           1
@@ -647,19 +641,52 @@ INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (15, TO_TIMEST
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (1, 1);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (3, 1);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (4, 1);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (5, 1);
+
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (6, 2);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (7, 2);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (14, 2);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (15, 2);
+
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (8, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (11, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (15, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (18, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (19, 3);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (9, 3);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (10, 3);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (2, 3);
+
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (7, 4);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (8, 4);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (13, 4);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (14, 4);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (16, 4);
-INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (12, 5);
 
-INSERT INTO Reunion_se_tinet
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (12, 5);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (20, 5);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (1, 5);
+
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (17, 6);
+
+
+--Degustations
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 1, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 3, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 4, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 5, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 6, 2);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 7, 2);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 8, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 11, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 15, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 18, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 19, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 7, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 8, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 14, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 16, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 12, 5);
+
 
 PROMPT "Fin de création de l extension de la base de donnees";

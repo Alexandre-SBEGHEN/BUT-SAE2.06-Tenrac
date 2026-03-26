@@ -401,14 +401,15 @@ CREATE TABLE Tenrac (
 
 CREATE TABLE Carte_Membre (
     --Attributs
-    carte_codeperso             VARCHAR2(8),
+    carte_id                    NUMBER(5, 0),
+    carte_codeperso             VARCHAR2(8)     NOT NULL,
     carte_active                NUMBER(1, 0)    NOT NULL,
     carte_expiration            DATE            NOT NULL,
     --Cles etrangeres
     club_id                     NUMBER(5, 0),
     tenrac_id                   NUMBER(10, 0)   NOT NULL,
     --Contraintes
-    CONSTRAINT PK_carte_codeperso           PRIMARY KEY(carte_codeperso),
+    CONSTRAINT PK_carte_id              PRIMARY KEY(carte_id),
     CONSTRAINT FK_club_id               FOREIGN KEY(club_id)        REFERENCES Club(club_id),
     CONSTRAINT FK_tenrac_carte_membre   FOREIGN KEY(tenrac_id)      REFERENCES Tenrac(tenrac_id),
     CONSTRAINT DM_carte_active          CHECK (carte_active IN (0, 1))
