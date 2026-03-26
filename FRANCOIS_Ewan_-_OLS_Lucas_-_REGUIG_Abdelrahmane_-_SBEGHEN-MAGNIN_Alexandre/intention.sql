@@ -559,7 +559,7 @@ CREATE TABLE Registre_Archive (
    registre_id      NUMBER(5, 0),
    certificat_id    NUMBER(10, 0),
    CONSTRAINT PK_Registre_Archive   PRIMARY KEY(registre_id, certificat_id),
-   CONSTRAINT FK_registre_archive        FOREIGN KEY(registre_id)                    REFERENCES Registre(registre_id),
+   CONSTRAINT FK_registre_archive   FOREIGN KEY(registre_id)                    REFERENCES Registre(registre_id),
    CONSTRAINT FK_certificat_id      FOREIGN KEY(certificat_id)                  REFERENCES Certificat_Entretien(certificat_id)
 );
 

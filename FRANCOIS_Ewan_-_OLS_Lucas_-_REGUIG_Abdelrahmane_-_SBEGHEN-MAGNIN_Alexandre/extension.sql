@@ -234,22 +234,22 @@ INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (4, TO_TIMESTA
 INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (5, TO_TIMESTAMP('2027/03/22 22:41:16', 'YYYY/MM/DD HH24:MI:SS'), 5);
 INSERT INTO Reunion (reunion_id, reunion_date, adresse_id) VALUES (6, TO_TIMESTAMP('2027/10/23 19:45:00', 'YYYY/MM/DD HH24:MI:SS'), 6);
 
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (1, 'SBEGHEN', 'ALEXANDRE', 'ALEXANDRE@SBEGHEN.FR', '0766117611', '44 AVENUE MAURICE THOREZ', 'RESIDENCE L''ARPEGE', '13110', 'PORT-DE-BOUC', '49573343174126', 4, 1, 1, NULL, 1);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (2, 'SOUBIALE', 'ELIAS', 'ELIAS.SOUBIALE2007@GMAIL.COM', '0745746718', '44 AVENUE PAUL LOMBARDI', NULL, '13620', 'CARRY-LE-ROUET', '81039915742549', 1, 1, NULL, NULL, 1);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (1, 'SBEGHEN', 'ALEXANDRE', 'ALEXANDRE@SBEGHEN.FR', '0766117611', '44 AVENUE MAURICE THOREZ', 'RESIDENCE L''ARPEGE', '13110', 'PORT-DE-BOUC', '49573343174126', 4, 1, 1, 3, 1);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (2, 'SOUBIALE', 'ELIAS', 'ELIAS.SOUBIALE2007@GMAIL.COM', '0745746718', '44 AVENUE PAUL LOMBARDI', NULL, '13620', 'CARRY-LE-ROUET', '81039915742549', 1, 1, NULL, 2, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (3, 'DUJARDIN', 'TRISTAN', 'T.DUJARDIN@GMAIL.COM', '0639340147', '14 RUE DES LILAS', NULL, '75012', 'PARIS', '19325770722439', 2, NULL, NULL, NULL, 1);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (4, 'CARPENTIER', 'AYMERIC', 'AYMERIC.CARPENTIER@OUTLOOK.FR', '0727075379', '8 AVENUE VICTOR HUGO', 'RESIDENCE LA RESIDENCE', '69003', 'LYON', '81039915742549', 1, 1, 2, NULL, 3);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (5, 'DIEUDONNE', 'SEBASTIEN', 'SEB.DIEUDO@YAHOO.FR', '0635708653', '22 BOULEVARD SAINT-MICHEL', NULL, '33000', 'BORDEAUX', '34343978457843', 1, NULL, NULL, NULL, 1);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (4, 'CARPENTIER', 'AYMERIC', 'AYMERIC.CARPENTIER@OUTLOOK.FR', '0727075379', '8 AVENUE VICTOR HUGO', 'RESIDENCE LA RESIDENCE', '69003', 'LYON', '81039915742549', 1, 1, 2, 1, 3);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (5, 'DIEUDONNE', 'SEBASTIEN', 'SEB.DIEUDO@YAHOO.FR', '0635708653', '22 BOULEVARD SAINT-MICHEL', NULL, '33000', 'BORDEAUX', '34343978457843', 1, NULL, NULL, 1, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (6, 'ALLARD', 'SEBASTIEN', 'ALLARDS01@HOTMAIL.COM', '0640275210', '47 RUE DE LA RÉPUBLIQUE', 'RESIDENCE DU PAFF', '13001', 'MARSEILLE', '91709245161275', 2, NULL, 1, NULL, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (7, 'GERIN', 'LAURA', 'LAURA.GERIN1994@WANADOO.FR', '0656765327', '3 RUE DU MOULIN', NULL, '59000', 'LILLE', '29267099812654', 5, 2, NULL, 3, 2);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (8, 'COURVOISIER', 'NICOLETTE', 'NICOLETTE.COURVOISIER@GMAIL.COM', '0789896543', '19 CHEMIN DES OLIVIERS', 'LA PETITE MAISON DANS LA PRAIRIE', '31000', 'TOULOUSE', '49573343174126', 1, 1, NULL, NULL, 2);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (9, 'AUGER', 'ELODIE', 'ELODIIIE@GMAIL.COM', '0642424242', '11 AVENUE DES FLEURS', 'MAISON DU PRE FLEURI', '06000', 'NICE', '65141608307812', 3, 1, 2, NULL, 3);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (10, 'GAVREAY', 'YVETTE', 'GAVREAY.Y@GMAIL.COM', '0644450918', '6 RUE DES PEUPLIERS', 'RESIDENCE DU PEUPLE', '44000', 'NANTES', '46088520694523', 5, NULL, NULL, 2, 2);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (11, 'VERDUN', 'ANGELINA', 'ANGEVERDUN@OUTLOOK.FR', '0607586955', '41 ALLEE LOUIS DAQUIN', 'LA CAGE D''ESCALIER', '13500', 'MARTIGUES', '18972948872548', 4, 1, NULL, 2, 2);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (8, 'COURVOISIER', 'NICOLETTE', 'NICOLETTE.COURVOISIER@GMAIL.COM', '0789896543', '19 CHEMIN DES OLIVIERS', 'LA PETITE MAISON DANS LA PRAIRIE', '31000', 'TOULOUSE', '49573343174126', 1, 1, NULL, 1, 2);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (9, 'AUGER', 'ELODIE', 'ELODIIIE@GMAIL.COM', '0642424242', '11 AVENUE DES FLEURS', 'MAISON DU PRE FLEURI', '06000', 'NICE', '65141608307812', 3, 1, 2, 2, 3);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (10, 'GAVREAY', 'YVETTE', 'GAVREAY.Y@GMAIL.COM', '0644450918', '6 RUE DES PEUPLIERS', 'RESIDENCE DU PEUPLE', '44000', 'NANTES', '46088520694523', 5, NULL, 2, 2, 2);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (11, 'VERDUN', 'ANGELINA', 'ANGEVERDUN@OUTLOOK.FR', '0607586955', '41 ALLEE LOUIS DAQUIN', 'LA CAGE D''ESCALIER', '13500', 'MARTIGUES', '18972948872548', 4, 1, 1, 2, 2);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (12, 'HANOTIN', 'FIONA', 'FIONA.HANNOTIN@ETU.UNIV-AMU.FR', '0761896236', '9 IMPASSE DE BANCAU', NULL, '13500', 'MARTIGUES', '19325770722439', 6, 2, 2, 3, 2);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (13, 'PETIT', 'NOE', 'NOE.PETIT@LAMACHE.ORG', '0777991797', '14 RUE DU PAFF', NULL, '69100', 'LYON', '11367072392341', 1, 1, NULL, NULL, 3);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (13, 'PETIT', 'NOE', 'NOE.PETIT@LAMACHE.ORG', '0777991797', '14 RUE DU PAFF', NULL, '69100', 'LYON', '11367072392341', 1, 1, NULL, 1, 3);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (14, 'OROFIAMMA', 'EMMA', 'EMMA.OROFIAMMA@ETU.UNIV-AMU.FR', '0781024046', '4 RESIDENCE LES OLIVELLES', NULL, '13960', 'SAUSSET-LES-PINS', '18972948872548', 3, 1, 2, NULL, 2);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (15, 'BON', 'JEAN', 'JEANBON2014@MSN.COM', '0654321234', '25 RUE PASTEUR', NULL, '38000', 'GRENOBLE', '70117132427816', 1, NULL, 1, 1, 1);
-INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (16, 'LAMBERT', 'JULIEN', 'JUJUDU21@CLUB-INTERNET.FR', '0762842057', '12 RUE DE LA LIBERTE', 'RESIDENCE LA MOUTARDE', '21000', 'DIJON', '47824861065134', 1, NULL, NULL, 2, 1);
+INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (16, 'LAMBERT', 'JULIEN', 'JUJUDU21@CLUB-INTERNET.FR', '0762842057', '12 RUE DE LA LIBERTE', 'RESIDENCE LA MOUTARDE', '21000', 'DIJON', '47824861065134', 1, 1, 1, 2, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (17, 'FRANCOIS', 'MAXIME', 'MAXIME.FRANCOIS49@GMAIL.COM', '0606060606', '8 AVENUE JEAN JAURES', 'LA MAISON DU PAPE', '49000', 'ANGERS', '94514775215649', 4, 1, 2, 2, 1);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (18, 'KEVIN', 'JEAN', 'JEANKEVIN@GMAIL.COM', '0707070707', '1 RUE DE L''ANONYMITE', NULL, '00000', 'VILLE', '70117132427816', 2, 1, NULL, NULL, 3);
 INSERT INTO Tenrac (tenrac_id, tenrac_nom, tenrac_prenom, tenrac_courriel, tenrac_telephone, tenrac_adresse_principale, tenrac_adresse_complement, tenrac_adresse_code_postal, tenrac_adresse_ville, organisme_siret, grade_id, rang_id, titre_id, dignite_id, genre_id) VALUES (19, 'BEN-KHELIL', 'INES', 'INES.BEN-KHELIL@ETU.UNIV-AMU.FR', '0739571269','45 RUE DU QUADRICEPS', NULL, '13500', 'MARTIGUES', '77784108501264', 7, 2, 3, 3, 1);
@@ -286,46 +286,41 @@ INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expirat
 
 INSERT INTO Carte_Membre (carte_id, carte_codeperso, carte_active, carte_expiration, club_id, tenrac_id) VALUES (28, '12068457', 1, TO_DATE('2026-03-12', 'YYYY-MM-DD'), 1, 18);
 
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (1, DATE '2026-02-04', 11, 1);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (2, DATE '2026-02-04', 20, 2);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (3, DATE '2026-02-04', 20, 3);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (4, DATE '2026-02-04', 19, 4);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (5, DATE '2026-02-04', 11, 7);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (1, DATE '2026-02-04', 2, 1);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (2, DATE '2026-02-04', 5, 2);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (3, DATE '2026-02-04', 4, 3);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (4, DATE '2026-02-04', 7, 4);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (5, DATE '2026-02-04', 12, 7);
 INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (6, DATE '2026-02-06', 15, 2);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (7, DATE '2026-02-07', 7, 4);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (8, DATE'2026-02-07', 7, 6);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (9, DATE '2026-02-08', 20, 1);
-INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (10, DATE '2026-02-09', 11, 7);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (7, DATE '2026-02-07', 17, 4);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (8, DATE'2026-02-07', 1, 6);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (9, DATE '2026-02-08', 8, 1);
+INSERT INTO Certificat_Entretien (certificat_id, entretien_date, tenrac_id, machine_id) VALUES (10, DATE '2026-02-09', 1, 7);
 
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (1, 1);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (3, 1);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (4, 1);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (5, 1);
-
-INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (6, 2);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (7, 2);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (6, 2);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (14, 2);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (15, 2);
-
-INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (8, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (11, 3);
+INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (8, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (15, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (18, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (19, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (9, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (10, 3);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (2, 3);
-
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (7, 4);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (8, 4);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (13, 4);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (14, 4);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (16, 4);
-
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (12, 5);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (20, 5);
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (1, 5);
-
 INSERT INTO Tenrac_Se_Reunissent (tenrac_id, reunion_id) VALUES (17, 6);
 
 INSERT INTO Tenrac_Est_Allergique (tenrac_id, allergie_id) VALUES (1, 5);
@@ -474,6 +469,7 @@ INSERT INTO Plat_Est_Accompagne_De (plat_id, sauce_id) VALUES (22, 2);
 INSERT INTO Plat_Est_Accompagne_De (plat_id, sauce_id) VALUES (22, 5);
 INSERT INTO Plat_Est_Accompagne_De (plat_id, sauce_id) VALUES (22, 6);
 
+
 INSERT INTO Compo_Est_Assemblage_De (ingredient_id, composition_id) VALUES (9, 1);
 INSERT INTO Compo_Est_Assemblage_De (ingredient_id, composition_id) VALUES (11, 2);
 INSERT INTO Compo_Est_Assemblage_De (ingredient_id, composition_id) VALUES (12, 3);
@@ -504,6 +500,7 @@ INSERT INTO Compo_Est_Assemblage_De (ingredient_id, composition_id) VALUES (7, 2
 INSERT INTO Compo_Est_Assemblage_De (ingredient_id, composition_id) VALUES (8, 28);
 INSERT INTO Compo_Est_Assemblage_De (ingredient_id, composition_id) VALUES (3, 29);
 INSERT INTO Compo_Est_Assemblage_De (ingredient_id, composition_id) VALUES (7, 30);
+
 
 INSERT INTO Repas_Servi_Avec (repas_id, boisson_id) VALUES (1, 1);
 INSERT INTO Repas_Servi_Avec (repas_id, boisson_id) VALUES (1, 2);
@@ -546,6 +543,7 @@ INSERT INTO Repas_Servi_Avec (repas_id, boisson_id) VALUES (9, 6);
 INSERT INTO Repas_Servi_Avec (repas_id, boisson_id) VALUES (9, 8);
 INSERT INTO Repas_Servi_Avec (repas_id, boisson_id) VALUES (9, 9);
 
+
 INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (1, 1);
 INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (6, 2);
 INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (2, 3);
@@ -557,6 +555,7 @@ INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (3, 8);
 INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (4, 9);
 INSERT INTO Registre_Archive(registre_id, certificat_id) VALUES (5, 10);
 
+
 INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(5, 1);
 INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(3, 2);
 INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(7, 3);
@@ -567,6 +566,7 @@ INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(1, 7);
 INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(5, 2);
 INSERT INTO Machine_Prepare(repas_id, machine_id) VALUES(7, 5);
 
+
 INSERT INTO Modele_Necessite (modele_id, entretien_id) VALUES (1, 1);
 INSERT INTO Modele_Necessite (modele_id, entretien_id) VALUES (2, 2);
 INSERT INTO Modele_Necessite (modele_id, entretien_id) VALUES (3, 3);
@@ -574,21 +574,21 @@ INSERT INTO Modele_Necessite (modele_id, entretien_id) VALUES (4, 4);
 INSERT INTO Modele_Necessite (modele_id, entretien_id) VALUES (5, 5);
 INSERT INTO Modele_Necessite (modele_id, entretien_id) VALUES (6, 6);
 
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 1, 1);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 3, 1);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 4, 1);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 5, 1);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 6, 2);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 7, 2);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 8, 3);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 11, 3);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 15, 3);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 18, 3);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 19, 3);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 7, 4);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 8, 4);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 14, 4);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 16, 4);
-INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (, 12, 5);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (1, 1, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (2, 3, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (3, 4, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (4, 5, 1);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (5, 6, 2);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (6, 7, 2);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (7, 8, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (1, 11, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (2, 15, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (5, 18, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (9, 19, 3);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (2, 7, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (4, 8, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (6, 14, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (6, 16, 4);
+INSERT INTO Degustation (repas_id, tenrac_id, reunion_id) VALUES (8, 12, 5);
 
 PROMPT "Fin de création de l extension de la base de donnees";

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <Database>
-   <Name>mcd_mieux</Name>
+   <Name>mcd_mieux_color</Name>
    <Table>
       <Name>TENRAC_GRADE</Name>
       <Column>
          <Name>grade_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
       </Column>
       <Column>
          <Name>grade_nom</Name>
-         <Type>VARCHAR(32)</Type>
+         <Type>NVARCHAR2(32) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -21,11 +21,11 @@
       <Name>TENRAC_RANG</Name>
       <Column>
          <Name>rang_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
       </Column>
       <Column>
          <Name>rang_nom</Name>
-         <Type>VARCHAR(32)</Type>
+         <Type>NVARCHAR2(32) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -36,11 +36,11 @@
       <Name>TENRAC_TITRE</Name>
       <Column>
          <Name>titre_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
       </Column>
       <Column>
          <Name>titre_nom</Name>
-         <Type>VARCHAR(32)</Type>
+         <Type>NVARCHAR2(32) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -51,11 +51,11 @@
       <Name>TENRAC_DIGNITE</Name>
       <Column>
          <Name>dignite_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
       </Column>
       <Column>
          <Name>dignite_nom</Name>
-         <Type>VARCHAR(32)</Type>
+         <Type>NVARCHAR2(32) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -63,38 +63,14 @@
       </PK>
    </Table>
    <Table>
-      <Name>ORGANISME</Name>
-      <Column>
-         <Name>organisme_id</Name>
-         <Type>VARCHAR(50)</Type>
-      </Column>
-      <Column>
-         <Name>organisme_nom</Name>
-         <Type>VARCHAR(64)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>organisme_raison</Name>
-         <Type>VARCHAR(128)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>organisme_siret</Name>
-         <Type>VARCHAR(14)</Type>
-      </Column>
-      <PK>
-         <Key>organisme_id</Key>
-      </PK>
-   </Table>
-   <Table>
       <Name>REPAS</Name>
       <Column>
          <Name>repas_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>repas_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -105,11 +81,11 @@
       <Name>INGREDIENT</Name>
       <Column>
          <Name>ingredient_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>ingredient_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -120,11 +96,11 @@
       <Name>RACLETTE</Name>
       <Column>
          <Name>raclette_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
       </Column>
       <Column>
          <Name>raclette_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -135,11 +111,11 @@
       <Name>LEGUME</Name>
       <Column>
          <Name>legume_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>legume_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -150,7 +126,7 @@
       <Name>COMPOSITION</Name>
       <Column>
          <Name>composition_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>composition_id</Key>
@@ -160,11 +136,11 @@
       <Name>ALLERGIE</Name>
       <Column>
          <Name>allergie_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>allergie_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -175,11 +151,11 @@
       <Name>CROYANCE</Name>
       <Column>
          <Name>croyance_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>croyance_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -190,11 +166,11 @@
       <Name>CONVICTION</Name>
       <Column>
          <Name>conviction_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>conviction_nom</Name>
-         <Type>VARCHAR(50)</Type>
+         <Type>NVARCHAR2(50) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -205,11 +181,11 @@
       <Name>BOISSON</Name>
       <Column>
          <Name>boisson_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>boisson_nom</Name>
-         <Type>VARCHAR(32)</Type>
+         <Type>NVARCHAR2(32) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -220,11 +196,11 @@
       <Name>MACHINE_MODELE</Name>
       <Column>
          <Name>modele_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>modele_nom</Name>
-         <Type>VARCHAR(32)</Type>
+         <Type>VARCHAR2(32) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -235,16 +211,16 @@
       <Name>ENTRETIENT</Name>
       <Column>
          <Name>entretient_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>entretient_type</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>VARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>entretient_periodicite</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -255,117 +231,80 @@
       <Name>REGISTRE</Name>
       <Column>
          <Name>registre_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <PK>
          <Key>registre_id</Key>
       </PK>
    </Table>
    <Table>
-      <Name>TENRAC</Name>
+      <Name>ORGANISME_TYPE</Name>
       <Column>
-         <Name>tenrac_id</Name>
-         <Type>INT</Type>
+         <Name>type_id</Name>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
-         <Name>tenrac_nom</Name>
-         <Type>VARCHAR(50)</Type>
+         <Name>type_nom</Name>
+         <Type>NVARCHAR2(128) </Type>
          <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>tenrac_prenom</Name>
-         <Type>VARCHAR(50)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>tenrac_courriel</Name>
-         <Type>VARCHAR(320)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>tenrac_telephone</Name>
-         <Type>VARCHAR(20)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>tenrac_adresse_principale</Name>
-         <Type>VARCHAR(38)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>tenrac_adresse_complement</Name>
-         <Type>VARCHAR(38)</Type>
-      </Column>
-      <Column>
-         <Name>tenrac_adresse_code_postal</Name>
-         <Type>VARCHAR(10)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>tenrac_adresse_ville</Name>
-         <Type>VARCHAR(38)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>organisme_id</Name>
-         <Type>VARCHAR(50)</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>grade_id</Name>
-         <Type>BYTE</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>rang_id</Name>
-         <Type>BYTE</Type>
-      </Column>
-      <Column>
-         <Name>titre_id</Name>
-         <Type>BYTE</Type>
-      </Column>
-      <Column>
-         <Name>dignite_id</Name>
-         <Type>BYTE</Type>
       </Column>
       <PK>
-         <Key>tenrac_id</Key>
+         <Key>type_id</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>TENRAC_GENRE</Name>
+      <Column>
+         <Name>genre_id</Name>
+         <Type>NUMBER(3)</Type>
+      </Column>
+      <Column>
+         <Name>genre_nom</Name>
+         <Type>VARCHAR2(32) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>genre_id</Key>
+      </PK>
+   </Table>
+   <Table>
+      <Name>ORGANISME</Name>
+      <Column>
+         <Name>organisme_siret</Name>
+         <Type>VARCHAR2(14) </Type>
+      </Column>
+      <Column>
+         <Name>organisme_raison</Name>
+         <Type>NVARCHAR2(128) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>type_id</Name>
+         <Type>NUMBER(5)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>organisme_siret</Key>
       </PK>
       <FK>
-         <Key>organisme_id</Key>
-         <Reference>ORGANISME(organisme_id)</Reference>
-      </FK>
-      <FK>
-         <Key>grade_id</Key>
-         <Reference>TENRAC_GRADE(grade_id)</Reference>
-      </FK>
-      <FK>
-         <Key>rang_id</Key>
-         <Reference>TENRAC_RANG(rang_id)</Reference>
-      </FK>
-      <FK>
-         <Key>titre_id</Key>
-         <Reference>TENRAC_TITRE(titre_id)</Reference>
-      </FK>
-      <FK>
-         <Key>dignite_id</Key>
-         <Reference>TENRAC_DIGNITE(dignite_id)</Reference>
+         <Key>type_id</Key>
+         <Reference>ORGANISME_TYPE(type_id)</Reference>
       </FK>
    </Table>
    <Table>
       <Name>ORDRE</Name>
       <Column>
          <Name>ordre_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
       </Column>
       <Column>
          <Name>ordre_nom</Name>
-         <Type>VARCHAR(50)</Type>
+         <Type>NVARCHAR2(50) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>registre_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -380,21 +319,21 @@
       <Name>CLUB</Name>
       <Column>
          <Name>club_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>club_nom</Name>
-         <Type>VARCHAR(32)</Type>
+         <Type>NVARCHAR2(32) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>ordre_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>registre_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -413,31 +352,30 @@
       <Name>ADRESSE</Name>
       <Column>
          <Name>adresse_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>adresse_principale</Name>
-         <Type>VARCHAR(38)</Type>
+         <Type>NVARCHAR2(38) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>adresse_complement</Name>
-         <Type>VARCHAR(38)</Type>
+         <Type>NVARCHAR2(38) </Type>
       </Column>
       <Column>
          <Name>adresse_code_postal</Name>
-         <Type>VARCHAR(10)</Type>
+         <Type>NVARCHAR2(10) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>adresse_ville</Name>
-         <Type>VARCHAR(38)</Type>
+         <Type>NVARCHAR2(38) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>ordre_id</Name>
-         <Type>BYTE</Type>
-         <Property>NOT NULL</Property>
+         <Type>NUMBER(3)</Type>
       </Column>
       <PK>
          <Key>adresse_id</Key>
@@ -451,16 +389,16 @@
       <Name>REUNION</Name>
       <Column>
          <Name>reunion_id</Name>
-         <Type>BIGINT</Type>
+         <Type>NUMBER(20)</Type>
       </Column>
       <Column>
          <Name>reunion_date</Name>
-         <Type>DATETIME</Type>
+         <Type>TIMESTAMP</Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>adresse_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -472,58 +410,28 @@
       </FK>
    </Table>
    <Table>
-      <Name>DEGUSTATION</Name>
-      <Column>
-         <Name>repas_id</Name>
-         <Type>INT</Type>
-      </Column>
-      <Column>
-         <Name>tenrac_id</Name>
-         <Type>INT</Type>
-      </Column>
-      <Column>
-         <Name>reunion_id</Name>
-         <Type>BIGINT</Type>
-      </Column>
-      <PK>
-         <Key>repas_id, tenrac_id, reunion_id</Key>
-      </PK>
-      <FK>
-         <Key>repas_id</Key>
-         <Reference>REPAS(repas_id)</Reference>
-      </FK>
-      <FK>
-         <Key>tenrac_id</Key>
-         <Reference>TENRAC(tenrac_id)</Reference>
-      </FK>
-      <FK>
-         <Key>reunion_id</Key>
-         <Reference>REUNION(reunion_id)</Reference>
-      </FK>
-   </Table>
-   <Table>
       <Name>PLAT</Name>
       <Column>
          <Name>plat_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>plat_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>legume_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>raclette_id</Name>
-         <Type>BYTE</Type>
+         <Type>NUMBER(3)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>composition_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -549,16 +457,16 @@
       <Name>SAUCE</Name>
       <Column>
          <Name>sauce_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>sauce_nom</Name>
-         <Type>VARCHAR(64)</Type>
+         <Type>NVARCHAR2(64) </Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>composition_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -576,15 +484,15 @@
       <Name>MACHINE</Name>
       <Column>
          <Name>machine_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>machine_nom</Name>
-         <Type>VARCHAR(16)</Type>
+         <Type>NVARCHAR2(16) </Type>
       </Column>
       <Column>
          <Name>modele_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -596,24 +504,195 @@
       </FK>
    </Table>
    <Table>
-      <Name>CERTIFICAT_ENTRETIEN</Name>
+      <Name>TENRAC</Name>
+      <Column>
+         <Name>tenrac_id</Name>
+         <Type>NUMBER(10)</Type>
+      </Column>
+      <Column>
+         <Name>tenrac_nom</Name>
+         <Type>NVARCHAR2(50) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>tenrac_prenom</Name>
+         <Type>NVARCHAR2(50) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>tenrac_courriel</Name>
+         <Type>VARCHAR2(320) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>tenrac_telephone</Name>
+         <Type>VARCHAR2(20) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>tenrac_adresse_principale</Name>
+         <Type>NVARCHAR2(38) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>tenrac_adresse_complement</Name>
+         <Type>NVARCHAR2(38) </Type>
+      </Column>
+      <Column>
+         <Name>tenrac_adresse_code_postal</Name>
+         <Type>NVARCHAR2(10) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>tenrac_adresse_ville</Name>
+         <Type>NVARCHAR2(38) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>genre_id</Name>
+         <Type>NUMBER(3)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>organisme_siret</Name>
+         <Type>VARCHAR2(14) </Type>
+      </Column>
+      <Column>
+         <Name>grade_id</Name>
+         <Type>NUMBER(3)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>rang_id</Name>
+         <Type>NUMBER(3)</Type>
+      </Column>
+      <Column>
+         <Name>titre_id</Name>
+         <Type>NUMBER(3)</Type>
+      </Column>
+      <Column>
+         <Name>dignite_id</Name>
+         <Type>NUMBER(3)</Type>
+      </Column>
+      <PK>
+         <Key>tenrac_id</Key>
+      </PK>
+      <FK>
+         <Key>genre_id</Key>
+         <Reference>TENRAC_GENRE(genre_id)</Reference>
+      </FK>
+      <FK>
+         <Key>organisme_siret</Key>
+         <Reference>ORGANISME(organisme_siret)</Reference>
+      </FK>
+      <FK>
+         <Key>grade_id</Key>
+         <Reference>TENRAC_GRADE(grade_id)</Reference>
+      </FK>
+      <FK>
+         <Key>rang_id</Key>
+         <Reference>TENRAC_RANG(rang_id)</Reference>
+      </FK>
+      <FK>
+         <Key>titre_id</Key>
+         <Reference>TENRAC_TITRE(titre_id)</Reference>
+      </FK>
+      <FK>
+         <Key>dignite_id</Key>
+         <Reference>TENRAC_DIGNITE(dignite_id)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>CARTE_MEMBRE</Name>
+      <Column>
+         <Name>carte_id</Name>
+         <Type>NUMBER(5)</Type>
+      </Column>
+      <Column>
+         <Name>carte_codeperso</Name>
+         <Type>VARCHAR2(8) </Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>carte_active</Name>
+         <Type>NUMBER(1)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>carte_expiration</Name>
+         <Type>DATE</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <Column>
+         <Name>club_id</Name>
+         <Type>NUMBER(5)</Type>
+      </Column>
+      <Column>
+         <Name>tenrac_id</Name>
+         <Type>NUMBER(10)</Type>
+         <Property>NOT NULL</Property>
+      </Column>
+      <PK>
+         <Key>carte_id</Key>
+      </PK>
+      <FK>
+         <Key>club_id</Key>
+         <Reference>CLUB(club_id)</Reference>
+      </FK>
+      <FK>
+         <Key>tenrac_id</Key>
+         <Reference>TENRAC(tenrac_id)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>DEGUSTATION</Name>
+      <Column>
+         <Name>repas_id</Name>
+         <Type>NUMBER(10)</Type>
+      </Column>
+      <Column>
+         <Name>tenrac_id</Name>
+         <Type>NUMBER(10)</Type>
+      </Column>
+      <Column>
+         <Name>reunion_id</Name>
+         <Type>NUMBER(20)</Type>
+      </Column>
+      <PK>
+         <Key>repas_id, tenrac_id, reunion_id</Key>
+      </PK>
+      <FK>
+         <Key>repas_id</Key>
+         <Reference>REPAS(repas_id)</Reference>
+      </FK>
+      <FK>
+         <Key>tenrac_id</Key>
+         <Reference>TENRAC(tenrac_id)</Reference>
+      </FK>
+      <FK>
+         <Key>reunion_id</Key>
+         <Reference>REUNION(reunion_id)</Reference>
+      </FK>
+   </Table>
+   <Table>
+      <Name>CERTIFICAT_ENTRETIENT</Name>
       <Column>
          <Name>certificat_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>entretien_date</Name>
-         <Type>DATETIME</Type>
+         <Type>TIMESTAMP</Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>tenrac_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <Column>
          <Name>machine_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
          <Property>NOT NULL</Property>
       </Column>
       <PK>
@@ -629,51 +708,14 @@
       </FK>
    </Table>
    <Table>
-      <Name>CARTE_MEMBRE</Name>
-      <Column>
-         <Name>tenrac_code</Name>
-         <Type>INT</Type>
-      </Column>
-      <Column>
-         <Name>carte_active</Name>
-         <Type>LOGICAL</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>carte_expiration</Name>
-         <Type>DATE</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <Column>
-         <Name>club_id</Name>
-         <Type>SMALLINT</Type>
-      </Column>
-      <Column>
-         <Name>tenrac_id</Name>
-         <Type>INT</Type>
-         <Property>NOT NULL</Property>
-      </Column>
-      <PK>
-         <Key>tenrac_code</Key>
-      </PK>
-      <FK>
-         <Key>club_id</Key>
-         <Reference>CLUB(club_id)</Reference>
-      </FK>
-      <FK>
-         <Key>tenrac_id</Key>
-         <Reference>TENRAC(tenrac_id)</Reference>
-      </FK>
-   </Table>
-   <Table>
       <Name>tenrac_se_reunissent</Name>
       <Column>
          <Name>tenrac_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>reunion_id</Name>
-         <Type>BIGINT</Type>
+         <Type>NUMBER(20)</Type>
       </Column>
       <PK>
          <Key>tenrac_id, reunion_id</Key>
@@ -691,11 +733,11 @@
       <Name>repas_constitue_de</Name>
       <Column>
          <Name>repas_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>plat_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <PK>
          <Key>repas_id, plat_id</Key>
@@ -713,11 +755,11 @@
       <Name>plat_est_accompagne_de</Name>
       <Column>
          <Name>plat_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>sauce_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <PK>
          <Key>plat_id, sauce_id</Key>
@@ -735,11 +777,11 @@
       <Name>compo_est_assemblage_de</Name>
       <Column>
          <Name>ingredient_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>composition_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>ingredient_id, composition_id</Key>
@@ -757,11 +799,11 @@
       <Name>legume_peut_heurter</Name>
       <Column>
          <Name>legume_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>croyance_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>legume_id, croyance_id</Key>
@@ -779,11 +821,11 @@
       <Name>legume_peut_enfreindre</Name>
       <Column>
          <Name>legume_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>conviction_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>legume_id, conviction_id</Key>
@@ -801,11 +843,11 @@
       <Name>legume_peut_provoquer</Name>
       <Column>
          <Name>legume_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>allergie_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>legume_id, allergie_id</Key>
@@ -823,11 +865,11 @@
       <Name>tenrac_a_pour_conviction</Name>
       <Column>
          <Name>tenrac_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>conviction_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>tenrac_id, conviction_id</Key>
@@ -845,11 +887,11 @@
       <Name>tenrac_est_allergique</Name>
       <Column>
          <Name>tenrac_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>allergie_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>tenrac_id, allergie_id</Key>
@@ -867,11 +909,11 @@
       <Name>tenrac_croit</Name>
       <Column>
          <Name>tenrac_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>croyance_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>tenrac_id, croyance_id</Key>
@@ -889,11 +931,11 @@
       <Name>repas_servi_avec</Name>
       <Column>
          <Name>repas_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>boisson_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <PK>
          <Key>repas_id, boisson_id</Key>
@@ -911,11 +953,11 @@
       <Name>modele_necessite</Name>
       <Column>
          <Name>modele_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>entretient_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>modele_id, entretient_id</Key>
@@ -933,11 +975,11 @@
       <Name>machine_prepare</Name>
       <Column>
          <Name>repas_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <Column>
          <Name>machine_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <PK>
          <Key>repas_id, machine_id</Key>
@@ -955,11 +997,11 @@
       <Name>registre_archive</Name>
       <Column>
          <Name>registre_id</Name>
-         <Type>SMALLINT</Type>
+         <Type>NUMBER(5)</Type>
       </Column>
       <Column>
          <Name>certificat_id</Name>
-         <Type>INT</Type>
+         <Type>NUMBER(10)</Type>
       </Column>
       <PK>
          <Key>registre_id, certificat_id</Key>
@@ -970,7 +1012,7 @@
       </FK>
       <FK>
          <Key>certificat_id</Key>
-         <Reference>CERTIFICAT_ENTRETIEN(certificat_id)</Reference>
+         <Reference>CERTIFICAT_ENTRETIENT(certificat_id)</Reference>
       </FK>
    </Table>
 </Database>

@@ -1,48 +1,48 @@
 -- Membres et hiérarchie --
-1) Quels sont, par ordre alphabétique, les noms, prénoms et grades des tenracs ? 3 attributs, 20 tuples
+1) Quels sont, par ordre alphabétique, les noms, prénoms et grades des tenracs ?
 
-2) Quels sont les noms, prénoms, grades et rangs des tenracs ayant à la fois un rang et un titre ? 4 attributs, 5 tuples
+2) Quels sont les noms, prénoms, grades et rangs des tenracs ayant à la fois un rang et un titre ?
 
-3) Quels sont, par grade, les nombres de tenracs ainsi que le grade le plus représenté ? 2 attributs, 7 tuples
+3) Quels sont, par grade, les nombres de tenracs ainsi que le grade le plus représenté ?
 
 -- Clubs et Ordre --
-4) Quels sont les noms des clubs et les noms des tenracs qui y sont directement affiliés ? 2 attributs, 15 tuples
+4) Quels sont les noms des clubs et les noms des tenracs qui y sont directement affiliés ?
 
-5) Quels sont les noms, prénoms des tenracs et les noms de leurs clubs, pour les tenracs dont l'organisme d'appartenance est une entreprise ? 3 attributs, 8 tuples
+5) Quels sont les noms, prénoms des tenracs et les noms de leurs clubs, pour les tenracs dont l'organisme d'appartenance est une entreprise ?
 
-6) Quels sont, par club, les nombres de tenracs, y compris les clubs n'en ayant aucun ? 2 attributs, 6 tuples
+6) Quels sont, par club, les nombres de tenracs, y compris les clubs n'en ayant aucun ?
 
 -- Réunions et participation --
-7) Quels sont les noms, prénoms des tenracs et les dates des réunions auxquelles ils ont participé, pour les réunions ayant eu lieu en 2024 ? 3 attributs, 12 tuples
+7) Quels sont les noms, prénoms des tenracs et les dates des réunions auxquelles ils ont participé, pour les réunions ayant eu lieu en 2024 ?
 
-8) Quels sont les noms, prénoms des tenracs n'ayant participé à aucune réunion ? 2 attributs, 4 tuples
+8) Quels sont les noms, prénoms des tenracs n'ayant participé à aucune réunion ?
 
-9) Quels sont, par tenrac, les nombres de réunions auxquelles ils ont participé, pour ceux en ayant fait au moins deux, avec leurs noms et prénoms ? 3 attributs, 6 tuples
+9) Quels sont, par tenrac, les nombres de réunions auxquelles ils ont participé, pour ceux en ayant fait au moins deux, avec leurs noms et prénoms ?
 
 -- Repas et plats --
-10) Quels sont les noms des repas et les noms des plats qui les composent, par ordre alphabétique des repas ? 2 attributs, 30 tuples
+10) Quels sont les noms des repas et les noms des plats qui les composent, par ordre alphabétique des repas ?
 
-11) Quels sont les noms des plats, les noms de leurs sauces d'accompagnement et les noms des ingrédients composant ces sauces, pour les plats en ayant au moins une ? 3 attributs, 10 tuples
+11) Quels sont les noms des plats, les noms de leurs sauces d'accompagnement et les noms des ingrédients composant ces sauces, pour les plats en ayant au moins une ?
 
-12) Quels sont, par repas, les nombres de plats ainsi que les noms des repas en comportant plus de deux ? 2 attributs, 3 tuples
+12) Quels sont, par repas, les nombres de plats ainsi que les noms des repas en comportant plus de deux ?
 
 -- Légumes et sensibilités --
-13) Quels sont les noms des plats contenant un légume, le nom du légume en question ainsi que les allergies qu'il est susceptible de provoquer ? 3 attributs, 6 tuples
+13) Quels sont les noms des plats contenant un légume, le nom du légume en question ainsi que les allergies qu'il est susceptible de provoquer ?
 
-14) Quels sont les noms, prénoms des tenracs et les noms de leurs convictions personnelles connues, pour ceux en ayant au moins une ? 3 attributs, 7 tuples
+14) Quels sont les noms, prénoms des tenracs et les noms de leurs convictions personnelles connues, pour ceux en ayant au moins une ?
 
-15) Quels sont les noms des légumes susceptibles de heurter une croyance ou d'enfreindre une conviction, avec le type de problème associé (croyance ou conviction) et son intitulé ? 3 attributs, 8 tuples
+15) Quels sont les noms des légumes susceptibles de heurter une croyance ou d'enfreindre une conviction, avec le type de problème associé (croyance ou conviction) et son intitulé ?
 
 -- Machines et entretiens --
-16) Quels sont les noms des machines, leurs modèles et leurs dates d'entretien, par ordre chronologique des entretiens ? 3 attributs, 10 tuples
+16) Quels sont les noms des machines, leurs modèles et leurs dates d'entretien, par ordre chronologique des entretiens ?
 
-17) Quels sont les noms, prénoms des tenracs ayant effectué au moins un entretien de machine, avec le nom de la machine entretenue et la date de l'entretien ? 4 attributs, 8 tuples
+17) Quels sont les noms, prénoms des tenracs ayant effectué au moins un entretien de machine, avec le nom de la machine entretenue et la date de l'entretien ?
 
-18) Quels sont, par modèle de machine, les types d'entretien requis et leurs périodicités, par ordre croissant de périodicité ? 3 attributs, 6 tuples
+18) Quels sont, par modèle de machine, les types d'entretien requis et leurs périodicités, par ordre croissant de périodicité ?
 
 -- Transversal --
-19) Quels sont les noms, prénoms des tenracs, leurs grades et le nombre de réunions auxquelles ils ont participé, pour les tenracs de grade Chevalier ou Dame, qu'ils aient ou non participé à des réunions ? 4 attributs, 5 tuples
+19) Quels sont les noms, prénoms des tenracs, leurs grades et le nombre de réunions auxquelles ils ont participé, pour les tenracs de grade Chevalier ou Dame, qu'ils aient ou non participé à des réunions ?
 
-20) Quels sont les noms, prénoms des tenracs ayant dégusté un repas contenant un plat avec un légume susceptible de provoquer une allergie dont ils sont eux-mêmes atteints, avec le nom du repas, le nom du légume et le nom de l'allergie en question ? 5 attributs, 3 tuples
+20) Quels sont les noms, prénoms des tenracs ayant dégusté un repas contenant un plat avec un légume susceptible de provoquer une allergie dont ils sont eux-mêmes atteints, avec le nom du repas, le nom du légume et le nom de l'allergie en question ?
 
-21) Quels sont, par club et par grade, les nombres de tenracs ayant participé à au moins une réunion en 2024, avec les noms des clubs et les noms des grades concernés ? 3 attributs, 8 tuples
+21) Quels sont, par club et par grade, les nombres de tenracs ayant participé à au moins une réunion en 2024, avec les noms des clubs et les noms des grades concernés ?
