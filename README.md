@@ -1,4 +1,4 @@
-# BUT-SAE2.06-Tenrac
+# BUT-SAE2.04-Tenrac
 Création de la base de données des Tenrac en SQL
 
 
